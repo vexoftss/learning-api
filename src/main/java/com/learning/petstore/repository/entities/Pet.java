@@ -9,8 +9,6 @@ import java.util.Optional;
 public class Pet {
     @Id
     @Column(name = "id")
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pet_seq")
-//    @SequenceGenerator(name = "pet_seq", sequenceName = "pet_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Transient
